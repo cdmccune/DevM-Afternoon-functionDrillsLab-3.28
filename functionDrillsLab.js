@@ -50,7 +50,7 @@ const printName = name => console.log(name)
 */
 
 const greeting = name => {
-  name = String(name)
+  String(name)
   // console.log(`Hello, ${name}`)
 }
 
@@ -84,13 +84,13 @@ const compareNums = (num1, num2) => {
 //CODE HERE
 
 const add = (par1,par2) => {
-  par1 = Number(par1)
-  par2 = Number(par2)
+  par1 = +(par1)
+  par2 = +(par2)
   return par1 + par2
 }
 
 const Sum = add("4","5")
-// console.log(Sum)
+console.log(Sum)
 
 ////////////////// PROBLEM 7 ////////////////////
 
