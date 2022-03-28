@@ -50,11 +50,11 @@ const printName = name => console.log(name)
 */
 
 const greeting = name => {
-  String(name)
-  // console.log(`Hello, ${name}`)
+  name = String(name)
+  console.log(`Hello, ${name}`)
 }
 
-greeting(`Curt`)
+greeting(9)
 
 ////////////////// PROBLEM 5 ////////////////////
 
