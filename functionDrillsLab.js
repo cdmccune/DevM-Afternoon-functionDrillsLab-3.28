@@ -344,7 +344,13 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+const frogs = gold => {
+  gold -= (gold % 3)
+  return gold /= 3
+}
 
+totalFrogs = frogs(10)
+console.log(totalFrogs)
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
