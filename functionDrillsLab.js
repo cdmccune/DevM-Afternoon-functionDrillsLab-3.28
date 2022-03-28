@@ -11,7 +11,8 @@
   Call the function.
 */
 
-//CODE HERE
+//  let helloWorld = () => {console.log("Hello, World!")}
+//  helloWorld()
 
 
 ////////////////// PROBLEM 2 ////////////////////
@@ -44,8 +45,12 @@
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+// const greeting = name => {
+//   name = String(name)
+//   console.log(`Hello, ${name}`)
+// }
 
+// greeting(`Curt`)
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -58,7 +63,15 @@
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
+// const compareNums = (num1, num2) => {
+//   if (num1 >= num2) {
+//     console.log(num1)
+//   } else {
+//     console.log(num2)
+//   }
+// }
+
+// compareNums(3,3)
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -71,6 +84,14 @@
 
 //CODE HERE
 
+// const add = (par1,par2) => {
+//   par1 = Number(par1)
+//   par2 = Number(par2)
+//   return par1 + par2
+// }
+
+// const Sum = add("4","5")
+// console.log(Sum)
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -83,9 +104,7 @@ const exclaim = function(str) {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
-// declaration
-// expression
+//expression
 
 
 
@@ -100,9 +119,8 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
-// declaration
-// expression
+//arrow
+
 
 /*
   Rewrite exclaimTwo to be a single line.
@@ -110,6 +128,7 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
+
 
 
 
@@ -124,9 +143,9 @@ function exclaimFour(str) {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
-// declaration
-// expression
+
+//declaration
+
 
 
 ////////////////// PROBLEM 10 ////////////////////
@@ -138,7 +157,18 @@ function exclaimFour(str) {
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
+// const nameCheck = name => {
+//   if (name === "Steven") {
+//     return "What is up Steven?"
+//   } else if (name ===  `Bryan`) {
+//     return `Hey Bryan!`
+//   } else {
+//     return `Cool name, ${name}`
+//   }
+// }
+
+// const nameGreeting = nameCheck(`Bryan`)
+// console.log(nameGreeting)
 
 
 ////////////////// PROBLEM 11 ////////////////////
@@ -152,7 +182,20 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+// const faveColorFinder = color => {
+//   if (color === 'red') {
+//     return `red is a great color`
+//   } else if (color === `green`) {
+//     return `green is a solid color`
+//   } else if (color === `black`) {
+//     return `so trendy` 
+//   } else {
+//     return `you need to evaluate your favorite color choice`
+//   }
+// }
 
+// const colorRating = faveColorFinder(`blue`)
+// console.log(colorRating)
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -162,7 +205,13 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Call the function, passing in the `namesArr` array (above).
 */
 
-//CODE HERE
+// const printAllNames = nameArr => {
+//   for (i=0; i<nameArr.length; i++) {
+//     console.log(nameArr[i])
+//   }
+// }
+
+// printAllNames(namesArr)
 
 
 ////////////////// PROBLEM 13 ////////////////////
@@ -173,8 +222,15 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
 
-//CODE HERE
-
+// const thatsOdd = num => {
+//   if (num % 2 == 0) {
+//     return `That's not odd!`
+//   } else {
+//     return `That is odd indeed!`
+//   }
+// }
+// const oddChecker = thatsOdd(7)
+// console.log(oddChecker)
 
 ////////////////// PROBLEM 14 ////////////////////
 
@@ -188,6 +244,10 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 
+// const bestMovie = title =>  `${title} is the best movie ever`
+
+// console.log(bestMovie(`batman`))
+
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -200,8 +260,20 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-//CODE HERE
+const bigOrSmall = arr => {
+  const answers = []
+  for (i=0; i<arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push(`Big`)
+    } else {
+      answers.push(`Small`)
+    }
+  }
+  return answers
+}
 
+const arrayEvaluator = bigOrSmall(bigOrSmallArray)
+console.log(arrayEvaluator)
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
