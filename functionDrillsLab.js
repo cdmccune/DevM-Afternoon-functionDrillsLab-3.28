@@ -283,8 +283,17 @@ let loser = 'Glimmer'
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 
-//CODE HERE
+const theEliminator = (cont, loser) => {
+  const newCont = []
+  For (i=0; i<cont.length; i++){
+    if (loser === cont[i]) {
+      return = cont.splice(i,1)
+    }
+  }
+  
+}
 
+console.log(theEliminator(contestants, `Glimmer`))
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
